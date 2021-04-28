@@ -21,7 +21,7 @@
 }
 
 body {
-  background: var(--gray-900);
+  background: darkgrey;
   color: var(--white);
 }
 
