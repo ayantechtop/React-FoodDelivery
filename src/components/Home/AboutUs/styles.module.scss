@@ -1,0 +1,40 @@
+.aboutUsContainer {
+  position: relative;
+  min-height: 100vh; 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  main {
+    width: 80%;
+    height: calc(100vh - (80px * 2));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .title {
+      h2 {
+        font-size: 42px;
+        font-weight: 400;        
+
+        &::after{
+          content: attr(data-content);
+          display: flex;          
+          margin-top: -25px;
+          font-size: 52px;
+          padding-left: 18px;
+          font-weight: normal;
+        } 
+      }
+    }
+
+    p {
+      max-width: 600px;
+      margin-top: 30px;
+      font-size: 18px;
+    }
+  }
+}
