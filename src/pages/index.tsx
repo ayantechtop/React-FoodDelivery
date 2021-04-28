@@ -1,12 +1,12 @@
 import { ContactForm } from "../components/ContactForm";
-import { Header } from "../components/Header";
+import { FirstSection } from "../components/Home/FirstSection";
 
 import s from "../styles/home.module.scss";
 
 export default function Home() {
   return (
     <div className={s.container}>
-      <Header />
+      <FirstSection />
       <ContactForm />
     </div>
   );
