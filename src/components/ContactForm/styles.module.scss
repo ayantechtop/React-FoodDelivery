@@ -1,0 +1,36 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  input, textarea {
+    width: 400px;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;    
+    border: none;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    height: 100px;
+    max-height: 150px;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  button {
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+
+    border: none;
+    transition: all 0.3s;
+
+    &:hover {
+      filter: brightness(0.97);
+    }
+  }
+}
