@@ -1,0 +1,10 @@
+.container {  
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+}

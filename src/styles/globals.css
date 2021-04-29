@@ -3,10 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  outline: 0;
 }
 
 :root {
   --white: #FFFFFF;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1080px) {
@@ -22,12 +27,12 @@
 }
 
 body {
-  background: darkgrey;
+  background: #F7F7F7;
   color: var(--white);
 }
 
 body, input, textarea, select, button {
-  font: 400 1rem "Roboto", sans-serif;
+  font: 400 1rem "Lato", sans-serif;
 }
 
 button {
