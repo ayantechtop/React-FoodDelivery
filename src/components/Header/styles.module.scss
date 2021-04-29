@@ -7,7 +7,7 @@
   align-items: center;
   position: fixed;
   z-index: 999;
-  background: rgba(52, 56, 59, 0.3) 25%;
+  background: rgba(52, 56, 59, 0.2) 25%;
 
   ul, li {
     display: inline-block;
@@ -28,7 +28,7 @@
   }
 
   .menuItems {
-    @media screen and (max-width: 400px) { 
+    @media screen and (max-width: 500px) { 
       display: none;
     }
   }
@@ -106,7 +106,7 @@
     }
   }
 
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 500px) {
     display: none;
   }
 }

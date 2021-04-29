@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center; 
   margin-bottom: 80px;
-
+  padding-top: 80px;
+  
   .title {
     h2 {
       font-size: 42px;
@@ -18,7 +19,6 @@
         display: flex;          
         margin-top: -35px;
         font-size: 52px;
-        padding-left: 18px;
         font-weight: 300;
         color: #E3E3E3;
       } 
