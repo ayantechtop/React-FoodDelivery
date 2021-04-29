@@ -1,37 +1,145 @@
-.formContainer {
+.contactContainer {
+  // min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  justify-content: center; 
+  margin-bottom: 80px;
 
-  input, textarea {
-    width: 400px;
-    height: 30px;
-    border-radius: 50px;
-    padding-left: 10px;    
-    border: none;
-    background-color: rgb(245, 245, 245);
-    margin-bottom: 20px;
+  .title {
+    h2 {
+      font-size: 42px;
+      font-weight: 400;
+      color: #CBCBCB;
+      text-align: center;
+
+      &::after{
+        content: attr(data-content);
+        display: flex;          
+        margin-top: -35px;
+        font-size: 52px;
+        padding-left: 18px;
+        font-weight: 300;
+        color: #E3E3E3;
+      } 
+    }
+
+    @media (max-width: 500px) {
+      h2 {
+        font-size: 32px;
+
+        &::after {
+          font-size: 32px;
+          margin-top: -18px;
+        }
+      }
+    }
   }
 
-  textarea {
-    height: 100px;
-    max-height: 150px;
-    max-width: 400px;
-    border-radius: 10px;
+  .contactInfo {
+    max-width: 960px;
+    color: #CBCBCB;
+    text-align: center;
+
+    font-size: 18px;
+    margin: 40px 0 45px 0;
   }
 
-  button {
-    border-radius: 10px;
-    width: 200px;
-    height: 30px;
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    input, textarea {
+      width: 554px;
+      height: 60px;
+      border-radius: 33px;
+      padding-left: 22px;    
+      border: none;
+      background-color: #DDDDDD;
+      margin-bottom: 20px;
+    }
+  
+    textarea {
+      min-height: 162px;
+      max-height: 190px;
+      max-width: 554px;
+      min-width: 554px;
+      border-radius: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  
+    button {
+      border-radius: 10px;
+      width: 296px;
+      height: 60px;
+      background: #DDDDDD;
 
-    border: none;
-    transition: all 0.3s;
+      border: none;
+      transition: all 0.3s;
+  
+      &:hover {
+        filter: brightness(0.97);
+      }
+    }
 
-    &:hover {
-      filter: brightness(0.97);
+  }
+  @media (max-width: 500px) {
+
+    .formContainer {
+      input, button {
+        width: 300px;        
+      }
+  
+      textarea {        
+        max-width: 300px;
+        min-width: 300px;
+      }      
+    }
+    
+    .contactInfo {      
+      width: 300px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 320px) {
+
+    .formContainer {
+      input, button {
+        width: 280px;    
+      }
+  
+      textarea {        
+        max-width: 280px;
+        min-width: 280px;
+      }      
+    }
+    
+    .contactInfo {
+      width: 280px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 300px) {
+
+    .formContainer {
+      input, button {
+        width: 260px;
+      }
+  
+      textarea {        
+        max-width: 260px;
+        min-width: 260px;
+      }      
+    }
+    
+    .contactInfo {
+      width: 260px;
+      font-size: 16px;
     }
   }
 }
