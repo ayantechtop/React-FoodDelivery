@@ -94,11 +94,11 @@
       width: 280px;
       border-radius: 4px;
       border: none;
-
+      color: gray;
       transition: all 0.3s;
 
       &:hover {
-        filter: brightness(0.97);
+        filter: brightness(0.9);
       }
 
       @media screen and (max-width: 300px) { 

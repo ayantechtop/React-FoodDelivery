@@ -19,7 +19,7 @@ export function FirstSection() {
           <h2>dollum ipsum collum</h2>
         </div>
 
-        <button>
+        <button onClick={() => window.location.href = "#about-us"}>
           Saiba mais
         </button>
       </main>
