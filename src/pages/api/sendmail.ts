@@ -3,13 +3,12 @@ import nodemailer from "nodemailer";
 
 interface mailData {
   text: string;
-  subject: string;
   userEmail: string;
   userName: string;
 }
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const { text, subject, userEmail, userName } = req.body as mailData;
+  const { text, userEmail, userName } = req.body as mailData;
 
   const transporter = nodemailer.createTransport({
     host: process.env.CONTACT_EMAIL_HOST,
@@ -27,7 +26,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     await transporter.sendMail({
       text: `Alguem deseja entrar em contato!\n\nNome: ${userName}\nE-mail: ${userEmail}\nTexto: ${text}`,
-      subject,
+      subject: "Contato",
       from: 'Contato',
       to: process.env.CONTACT_EMAIL_ADRESS,
     });
