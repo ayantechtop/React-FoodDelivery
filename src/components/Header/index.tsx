@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Sidebar from './HeaderMobile';
 import s from "./styles.module.scss";
 
@@ -13,11 +13,13 @@ export function Header() {
     <header className={s.headerContainer}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
-      <div className={isOpen ? s.mobileIconOpened : s.mobileIcon} onClick={toggle}>
-        <input type="checkbox" checked={isOpen} readOnly />
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className={s.mobileIconContainer}>
+        <div className={isOpen ? s.mobileIconOpened : s.mobileIcon} onClick={toggle}>
+          <input type="checkbox" checked={isOpen} readOnly />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <ul className={s.menuItems}>
         <li>
