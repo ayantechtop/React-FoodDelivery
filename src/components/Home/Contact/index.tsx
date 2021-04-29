@@ -7,19 +7,33 @@ export function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   async function handleContactSubmit(data) {
     data.preventDefault();
 
-    try {
-      await api.post('/sendmail', {
-        userName: name,
-        userEmail: email,
-        text: message,
-      });
-    } catch (error) {
-      console.log(error);
-    }    
+    if (name && email && message) {
+      try {
+        setErrorMessage('');
+        setLoading(true);
+        await api.post('/sendmail', {
+          userName: name,
+          userEmail: email,
+          text: message,
+        });
+  
+        alert("E-mail enviado com sucesso!");
+        setLoading(false);
+      } catch (error) {
+        setLoading(false);
+        console.log(error);
+        setErrorMessage("Algum erro ocorreu. Tente novamente.");
+      }    
+    } else {
+      setLoading(false);
+      setErrorMessage('Todos os campos devem ser preenchidos!');
+    }
   }
 
   return (
@@ -36,12 +50,15 @@ export function Contact() {
       </p>
 
       <form onSubmit={handleContactSubmit} className={s.formContainer}>
-        {/* <input type="text" name="subject" placeholder="subject" onChange={e => setSubject(e.target.value)} /> */}
         <input type="text" name="name" placeholder="Nome" onChange={e => setName(e.target.value)} />
-        <input type="text" name="email" placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
+        <input type="email" name="email" value={email} placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
         <textarea name="message" placeholder="Mensagem" onChange={e => setMessage(e.target.value)} />
+        
+        { errorMessage && <span>{errorMessage}</span> }
 
-        <button type="submit">Enviar</button>
+        <button type="submit" disabled={loading}>
+          { loading ? <div className={s.loader}></div> : "Enviar" }
+        </button>
       </form>
     </section>
   )
