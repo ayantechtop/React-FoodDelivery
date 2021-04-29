@@ -26,7 +26,7 @@ export function ProductCard({
         </div>
         <div className={s.showOnHover}>
           {Description}
-          <a href={url}>Saiba mais</a>
+          {/* <a href={url}>Saiba mais</a> */}
         </div>
       </div>
     </div>
