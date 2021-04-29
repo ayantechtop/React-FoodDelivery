@@ -5,10 +5,16 @@
   align-items: center;
   position: relative;
   min-height: 100vh;
+  background: url('/images/landing_background2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
 
   main {
     width: 80%;
-    height: calc(100vh - (80px * 2));
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,14 +28,15 @@
     .title {
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: flex-end;      
 
       p {
-        font-size: 20px;   
+        font-size: 25px;   
+        font-weight: 300;
       }
 
       h3 {
-        font-size: 24px;
+        font-size: 26px;
         line-height: 22px;
       }
 
@@ -45,22 +52,38 @@
       margin-top: 40px;
 
       p {
-        font-size: 28px;
+        font-size: 38px;
+        font-weight: 300;
       }
 
-      h1 {
-        font-size: 60px;
-        line-height: 35px;
-        font-weight: 400;            
+      h2 {
+        font-size: 62px;
+        line-height: 34px;
+        font-weight: 300;
+        margin-left: -10px;
       }
 
       @media screen and (max-width: 400px) { 
-        h1 {
-          font-size: 40px;
+        
+        h2 {
+          font-size: 35px;
+          margin-top: -2px;
         }
 
         p {
           line-height: 12px;
+          font-size: 24px;
+        }
+      }
+      
+      @media screen and (max-width: 320px) { 
+        h2 {
+          font-size: 32px;
+        }
+
+        p {
+          line-height: 12px;
+          font-size: 24px;
         }
       }
     }
@@ -76,6 +99,11 @@
 
       &:hover {
         filter: brightness(0.97);
+      }
+
+      @media screen and (max-width: 300px) { 
+        height: 45px;
+        width: 180px;
       }
     }
   }

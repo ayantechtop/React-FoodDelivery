@@ -1,12 +1,10 @@
 import React from 'react';
-import { Header } from '../../Header';
 
 import s from "./styles.module.scss";
 
 export function FirstSection() {
   return (
     <section className={s.firstSectionContainer}>
-      <Header />
       <main>
         <div className={s.title}>
           <span></span>
@@ -18,11 +16,11 @@ export function FirstSection() {
 
         <div className={s.description}>
           <p>Lorem ipsum collum</p>
-          <h1>dollum ipsum collum</h1>
+          <h2>dollum ipsum collum</h2>
         </div>
 
         <button>
-          
+          Saiba mais
         </button>
       </main>
     </section>
