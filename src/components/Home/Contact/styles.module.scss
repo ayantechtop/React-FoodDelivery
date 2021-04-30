@@ -6,35 +6,6 @@
   justify-content: center; 
   margin-bottom: 80px;
   padding-top: 80px;
-  
-  .title {
-    h2 {
-      font-size: 42px;
-      font-weight: 400;
-      color: #CBCBCB;
-      text-align: center;
-
-      &::after{
-        content: attr(data-content);
-        display: flex;          
-        margin-top: -35px;
-        font-size: 52px;
-        font-weight: 300;
-        color: #E3E3E3;
-      } 
-    }
-
-    @media (max-width: 500px) {
-      h2 {
-        font-size: 32px;
-
-        &::after {
-          font-size: 32px;
-          margin-top: -18px;
-        }
-      }
-    }
-  }
 
   .contactInfo {
     max-width: 960px;

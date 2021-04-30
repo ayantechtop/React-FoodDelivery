@@ -1,4 +1,5 @@
 import React from 'react';
+import { SectionTitle } from '../../SectionTitle';
 
 import s from "./styles.module.scss";
 
@@ -6,9 +7,8 @@ export function AboutUs() {
   return (
     <section className={s.aboutUsContainer} id="about-us">
       <main>
-        <div className={s.title}>
-          <h2 data-content="Sobre nós">Sobre nós</h2>
-        </div>
+        <SectionTitle title="Sobre nós" subtitle="Sobre nós" />
+
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 

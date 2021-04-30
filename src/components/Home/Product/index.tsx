@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ProductCard } from "../../ProductCard";
+import { SectionTitle } from '../../SectionTitle';
 import s from "./styles.module.scss";
 
 export function Product() {
@@ -52,7 +53,7 @@ export function Product() {
     <section className={s.productContainer} id="product">
       <main>
         <div className={s.title}>
-          <h2 data-content="Nosso produto">Nosso produto</h2>
+          <SectionTitle title="Nosso produto" subtitle="Nosso produto" />
         </div>
         <div className={s.cardsContainer}>
           {columns.map(({ imgUrl, title, smallDescription, Description, url }) => (
