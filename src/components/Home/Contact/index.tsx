@@ -3,6 +3,7 @@ import { api } from '../../../services/api';
 import { FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 import s from "./styles.module.scss";
+import { SectionTitle } from '../../SectionTitle';
 
 export function Contact() {
   const [name, setName] = useState('');
@@ -39,9 +40,11 @@ export function Contact() {
 
   return (
     <section className={s.contactContainer} id="contact">
-      <div className={s.title}>
+      {/* <div className={s.title}>
         <h2 data-content="Entre em contato">Contato</h2>
-      </div>
+      </div> */}
+
+      <SectionTitle title="Contato" subtitle="Entre em contato" center />
 
       <p className={s.contactInfo}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus augue tortor,
