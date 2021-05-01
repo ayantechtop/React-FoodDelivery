@@ -22,4 +22,14 @@
       text-align: left;
     }
   }
+
+  @media (max-width: 500px) {
+    main {
+      align-items: center;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
 }
