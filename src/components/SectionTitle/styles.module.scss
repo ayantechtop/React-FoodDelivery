@@ -1,46 +1,14 @@
-.titleCenter {
-  h2 {
-    font-size: 42px;
-    font-weight: 400;
-    color: #CBCBCB;
-    text-align: center;
-
-    &::after{
-      content: attr(data-content);
-      display: flex;          
-      margin-top: -35px;
-      align-self: center;
-      font-size: 52px;
-      font-weight: 300;
-      color: #E3E3E3;
-      position: relative;
-      z-index: -1;
-    } 
-  }
-
-  @media (max-width: 500px) {
-    h2 {
-      font-size: 32px;
-
-      &::after {
-        font-size: 32px;
-        margin-top: -18px;
-      }
-    }
-  }
-}
-
 .title {
   h2 {
-    font-size: 42px;
+    font-size: 45px;
     font-weight: 400;
     color: #CBCBCB;
 
     &::after{
       content: attr(data-content);
       display: flex;          
-      margin-top: -25px;
-      font-size: 52px;
+      margin-top: -30px;
+      font-size: 58px;
       padding-left: 18px;
       font-weight: 300;
       color: #E3E3E3;
@@ -59,7 +27,30 @@
         justify-content: center;
         padding-left: 0px;
 
-        margin-top: -18px;
+        margin-top: -18px !important;
+      }
+    }
+  }
+}
+
+.titleCenter {
+  @extend .title;  
+
+  h2 {
+    text-align: center;
+
+    &::after {
+      justify-content: center;
+      padding-left: 0px;
+
+      margin-top: -40px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h2 {
+      &::after {
+        margin-top: -24px !important;
       }
     }
   }
