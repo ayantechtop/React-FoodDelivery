@@ -67,11 +67,10 @@
         
         h2 {
           font-size: 35px;
-          margin-top: -2px;
+          margin-top: 10px;
         }
 
         p {
-          line-height: 12px;
           font-size: 24px;
         }
       }
@@ -82,7 +81,6 @@
         }
 
         p {
-          line-height: 12px;
           font-size: 24px;
         }
       }
@@ -94,8 +92,9 @@
       width: 280px;
       border-radius: 4px;
       border: none;
-      color: gray;
+      color: #5C5C5C;
       transition: all 0.3s;
+      font-size: 18px;
 
       &:hover {
         filter: brightness(0.9);
