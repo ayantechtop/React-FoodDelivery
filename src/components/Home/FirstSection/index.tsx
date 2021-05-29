@@ -15,8 +15,8 @@ export function FirstSection() {
         </div>
 
         <div className={s.description}>
-          <p>Lorem ipsum collum</p>
-          <h2>dollum ipsum collum</h2>
+          <p>Produtos saudáveis, de qualidade DU PARÁ.</p>
+          <h2>Perfeitos para você e para o seu cliente!</h2>
         </div>
 
         <button onClick={() => window.location.href = "#about-us"}>

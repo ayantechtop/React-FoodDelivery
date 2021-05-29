@@ -47,10 +47,7 @@ export function Contact() {
       <SectionTitle title="Contato" subtitle="Entre em contato" center />
 
       <p className={s.contactInfo}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus augue tortor,
-        vel commodo massa luctus feugiat. Pellentesque sed orci nulla. Nulla facilisi. Cras
-        viverra mauris orci, nec porttitor dolor finibus lobortis. Nulla facilisi. Phasellus
-        ut enim sit amet nulla posuere tincidunt. Aenean eget velit justo. Pellentesque vitae.
+      Entre em contato conosco via email, responderemos em até 48 horas
       </p>
 
       <form onSubmit={handleContactSubmit} className={s.formContainer}>

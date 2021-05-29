@@ -71,13 +71,12 @@ export function Product() {
         <div className={s.moreInfo}>
           <h3>Lorem ipsum Dollum</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Fusce dapibus augue tortor, vel commodo massa luctus feugiat. 
-            Pellentesque sed orci nulla. Nulla facilisi. Cras viverra 
-            mauris orci, nec porttitor dolor finibus lobortis. Nulla facilisi. 
-            Phasellus ut enim sit amet nulla posuere tincidunt. Aenean eget 
-            velit justo. Pellentesque vitae scelerisque neque. Curabitur ut 
-            ipsum a neque malesuada accumsan
+          A gordura de palma DU PARÁ é um produto natural, saudável 
+          livre de substâncias químicas e um alimento ZERO TRANS, uma 
+          vez que não passa pelo processo de hidrogenação artificial. 
+          Além disso, é importante ressaltar que a gordura de palma 
+          DU PARÁ contém os antioxidantes que estão presentes no fruto 
+          da palmeira oleaginosa Elaeis Guineensis.
           </p>
         </div>
       </main>
