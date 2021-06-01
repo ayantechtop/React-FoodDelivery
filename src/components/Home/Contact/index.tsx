@@ -62,7 +62,7 @@ export function Contact() {
         </button>
       </form>
 
-      <div className={s.socialSection}>
+      {/* <div className={s.socialSection}>
         <a
           href="//www.instagram.com"
           target="_blank"
@@ -91,7 +91,7 @@ export function Contact() {
           </div>
         </a>
 
-      </div>
+      </div> */}
     </section>
   )
 }

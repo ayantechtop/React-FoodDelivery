@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import { AboutUs } from "../components/Home/AboutUs";
 import { Contact } from "../components/Home/Contact";
 import { FirstSection } from "../components/Home/FirstSection";
+import { MoreInfo } from "../components/Home/MoreInfo";
 import { Product } from "../components/Home/Product";
 
 import s from "../styles/home.module.scss";
@@ -17,9 +18,14 @@ export default function Home() {
       </Head>
       <Header />
       <FirstSection />
-      <AboutUs />
-      <Product />   
-      <Contact />   
+      <div className={s.aboutAndProduct}>
+        <AboutUs />
+        <Product />
+      </div>
+      <div className={s.moreInfoAndContact}>
+        <MoreInfo />
+        <Contact />
+      </div>
       <Footer />
     </div>
   );

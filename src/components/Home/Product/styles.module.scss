@@ -37,40 +37,6 @@
     }    
   }
 
-  .moreInfo {
-    width: 80%;
-    margin: 50px 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
-    h3 {
-      font-size: 48px;
-      color: #B5C973;
-      font-weight: 300;
-    }
-
-    p {
-      max-width: 960px;
-      font-size: 20px;
-      color: #CBCBCB;
-      margin-top: 30px;
-      text-align: left;
-      letter-spacing: 0.5px;
-    }
-
-    @media (max-width: 768px) {
-      h3 {
-        font-size: 30px;
-      }
-
-      p {
-        font-size: 20px;
-      }
-    }
-  }
-
   @media (max-width: 500px) {
     main {
       .title {

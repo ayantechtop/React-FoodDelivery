@@ -5,21 +5,21 @@ export function Footer() {
   return (
     <footer className={s.footerContainer}>
       <main>
-        <div className={s.title}>
-          <span></span>
-          <div>
-            <p>Gordura de Palma</p>
-            <h3>DU PARÁ</h3>
-          </div>
-        </div>
+        <img src="/images/logo_dark.svg" alt="DU PARÁ" />  
+
         <p className={s.footerInfo}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Fusce dapibus augue tortor, vel commodo massa luctus feugiat.
+          DU PARA - Industria de Alimento LTDA 
+          <br/>
+          <br/>
+          Av. Presidente Getulio Vargas, 3625 QUAD. B GALP 5 
+          <br/>
+          Ianetama - 68745-5000 Castanhal/Pa
         </p>
       </main>
       <div className={s.footer}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Fusce dapibus augue tortor, vel commodo massa luctus feugiat.
+        <p>
+          Todos os direitos reservados à DU PARÁ <span>-</span> Industria de Alimento LTDA
+        </p>
       </div>
     </footer>
   )

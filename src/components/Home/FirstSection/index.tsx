@@ -6,13 +6,7 @@ export function FirstSection() {
   return (
     <section className={s.firstSectionContainer}>
       <main>
-        <div className={s.title}>
-          <span></span>
-          <div>
-            <p>Gordura de Palma</p>
-            <h3>DU PARÁ</h3>
-          </div>
-        </div>
+        <img src="/images/logo.svg" alt="DU PARÁ" />  
 
         <div className={s.description}>
           <p>Produtos saudáveis, de qualidade DU PARÁ.</p>
