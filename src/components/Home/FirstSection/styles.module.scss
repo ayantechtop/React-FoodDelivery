@@ -25,6 +25,14 @@
       height: 356px;
     }
 
+    @media screen and (max-width: 450px) { 
+      width: 100vw;
+      padding: 20px;
+      img {
+        width: 350px;
+      }
+    }
+
     @media screen and (max-width: 400px) { 
       width: 100vw;
       padding: 20px;
