@@ -6,7 +6,7 @@ import s from "./styles.module.scss";
 import { SectionTitle } from '../../SectionTitle';
 
 export function Contact() {
-  const [name, setName] = useState('');
+  const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
@@ -15,13 +15,13 @@ export function Contact() {
   async function handleContactSubmit(data) {
     data.preventDefault();
 
-    if (name && email && message) {
+    if (subject && email && message) {
       try {
         setErrorMessage('');
         setLoading(true);
         await api.post('/sendmail', {
-          userName: name,
           userEmail: email,
+          subject: subject,
           text: message,
         });
 
@@ -47,9 +47,9 @@ export function Contact() {
             Entre em contato conosco via email, responderemos em até 48 horas
           </p>
           <form onSubmit={handleContactSubmit} className={s.formContainer}>
-            <input type="text" name="name" placeholder="Nome" onChange={e => setName(e.target.value)} />
             <input type="email" name="email" value={email} placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
-            <textarea name="message" placeholder="Mensagem" onChange={e => setMessage(e.target.value)} />
+            <input type="text" name="subject" placeholder="Assunto" onChange={e => setSubject(e.target.value)} />
+            <textarea name="message" placeholder="Descrição" onChange={e => setMessage(e.target.value)} />
 
             {errorMessage && <span>{errorMessage}</span>}
 

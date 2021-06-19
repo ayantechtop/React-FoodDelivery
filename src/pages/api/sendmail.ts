@@ -4,11 +4,11 @@ import nodemailer from "nodemailer";
 interface mailData {
   text: string;
   userEmail: string;
-  userName: string;
+  subject: string;
 }
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const { text, userEmail, userName } = req.body as mailData;
+  const { text, userEmail, subject } = req.body as mailData;
 
   const transporter = nodemailer.createTransport({
     host: process.env.CONTACT_EMAIL_HOST,
@@ -25,14 +25,15 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   
   try {
     await transporter.sendMail({
-      text: `Alguem deseja entrar em contato!\n\nNome: ${userName}\nE-mail: ${userEmail}\nTexto: ${text}`,
-      subject: "Contato",
-      from: 'Contato',
+      text: `E-mail: ${userEmail}\nDescrição:\n ${text}`,
+      subject: subject,
+      from: userEmail,
       to: process.env.CONTACT_EMAIL_ADRESS,
     });
   
     return res.status(200).json("OK");
   } catch (error) {
+    console.log(error)
     return res.status(400).json("ERROR");
   }  
 }
