@@ -8,7 +8,7 @@
   align-items: center;
 
   main {
-    width: 75%;
+    width: 1012px;
     padding: 75px 0 20px 0;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@
       justify-content: space-between;
 
       p {
-        max-width: 600px;
+        max-width: 459px;
         margin-top: 40px;
         font-size: 18px;
         color: #707070;
@@ -43,6 +43,7 @@
 
   @media (max-width: 500px) {
     main {
+      width: 80%;
       align-items: center;
 
       .textContainer {
@@ -56,7 +57,6 @@
 
         img {
           width: 350px;
-          margin-left: -10%;     
         }
       }
 
@@ -77,6 +77,7 @@
     main {
       .textContainer {
         img {
+          margin-left: -7%;
           width: 280px;
         }
       }

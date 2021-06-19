@@ -1,12 +1,19 @@
 .footerContainer {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+
   main {
-    width: 100%;
+    width: 1012px;
     height: 269px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F2F2F2;
-    padding: 0 12.5%;
+    // padding: 0 12.5%;
   
     .footerInfo {
       width: 456px;
@@ -27,6 +34,7 @@
     @media (max-width: 500px) {
       flex-direction: column;
       justify-content: center;
+      width: 80%;
       height: 480px;
 
       .footerInfo {

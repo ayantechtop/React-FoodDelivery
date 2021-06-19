@@ -10,10 +10,10 @@
   padding-top: 80px;
 
   main {
-    width: 75%;
+    width: 1012px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
 
     div {
@@ -86,6 +86,11 @@
 
       @media (max-width: 500px) {
         align-items: center;
+        width: 80%;
+
+        .contactInfo {
+          text-align: center;
+        }
 
         .formContainer {
           margin-right: 0px;
@@ -149,6 +154,8 @@
     }
 
     @media (max-width: 500px) {
+      justify-content: center;
+
       img {
         display: none;
       }

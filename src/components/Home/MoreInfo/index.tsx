@@ -4,8 +4,8 @@ import s from "./styles.module.scss";
 export function MoreInfo() {
   return (
     <section className={s.moreInfoContainer}>
-          <h2>Por que usar a Gordura Du Pará</h2>
-      <div className={s.textContainer}>
+        <h2>Por que usar a Gordura Du Pará</h2>
+        <div className={s.textContainer}>
           <p>
             As características da gordura de palma DU PARÁ tornarão 
             o seu produto mais saudável para o consumidor final. 
