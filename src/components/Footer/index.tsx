@@ -16,9 +16,9 @@ export function Footer() {
           Ianetama - 68745-5000 Castanhal/Pa
           <br/>
           <br/>
-          Du Pará escritório: <span></span><a href="tel:+55 91 3353-7050">91-3353-7050</a> / <a href="tel:+55 91 98423-5190">91-98423-5190</a>
+          Du Pará escritório: <span></span><a href="tel:91 3353-7050">91-3353-7050</a> / <a href="tel:91 98423-5190">91-98423-5190</a>
           <br/>
-          Comercial: <span></span><a href="tel:+55 81 99837-7050">81-99837-7050</a>  / <a href="tel:+55 71 99705-8423">71-99705-8423</a>
+          Comercial: <span></span><a href="tel:81 99837-7050">81-99837-7050</a>  / <a href="tel:71 99705-8423">71-99705-8423</a>
         </div>
       </main>
       <div className={s.footer}>
