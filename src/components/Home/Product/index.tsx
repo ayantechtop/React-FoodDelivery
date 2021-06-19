@@ -30,7 +30,7 @@ export function Product() {
             de produção, envasamento, estoque, armazenamento e transporte.
           </p>      
           <div>
-            <img src="/images/nutritional_table.png" alt="Tabela nutricional DU PARÁ" />
+            <img src="/images/nutritional_table2.png" alt="Tabela nutricional DU PARÁ" />
             <img src="/images/products.png" alt="Produtos DU PARÁ" />
           </div>
         </div>

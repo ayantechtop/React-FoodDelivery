@@ -51,14 +51,38 @@
         p {
           text-align: center;
           margin-right: 0;
-          // margin-bottom: 20px;
+          margin-bottom: 50px;
         }
 
         img {
-          display: none;
+          width: 350px;
+          margin-left: -10%;
+          &:last-child{
+            display: none;
+          }
         }
       }
 
+    }
+  }
+
+  @media (max-width: 400px) {
+    main {
+      .textContainer {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    main {
+      .textContainer {
+        img {
+          width: 280px;
+        }
+      }
     }
   }
 }
