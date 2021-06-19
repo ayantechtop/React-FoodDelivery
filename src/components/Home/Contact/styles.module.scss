@@ -1,129 +1,158 @@
 .contactContainer {
+  width: 100%;
+  position: relative;
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center; 
   margin-bottom: 80px;
   padding-top: 80px;
 
-  .contactInfo {
-    max-width: 960px;
-    color: #CBCBCB;
-    text-align: center;
-
-    font-size: 18px;
-    margin: 40px 0 45px 0;
-  }
-
-  .formContainer {
+  main {
+    width: 75%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  
-    input, textarea {
-      width: 554px;
-      height: 60px;
-      border-radius: 33px;
-      padding-left: 22px;    
-      border: none;
-      background-color: #DDDDDD;
-      margin-bottom: 20px;
-    }
-  
-    textarea {
-      min-height: 162px;
-      max-height: 190px;
-      max-width: 554px;
-      min-width: 554px;
-      border-radius: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-  
-    button {
-      border-radius: 10px;
-      width: 296px;
-      height: 60px;
-      background: #5A7D16;
-      color: #ffffff;
-      font-size: 25px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
 
-      border: none;
-      transition: all 0.3s;
-  
-      &:hover {
-        filter: brightness(0.97);
-      }
-    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
 
-    button:disabled {
-      cursor: progress;
-    }
-
-    span {    
-      color: red;
-      margin-top: -10px;
-      padding-bottom: 10px;
-    }
-
-  }
-  @media (max-width: 500px) {
-
-    .formContainer {
-      input, button {
-        width: 300px;        
-      }
-  
-      textarea {        
-        max-width: 300px;
-        min-width: 300px;
-      }      
-    }
+      .contactInfo {
+        max-width: 281px;
+        color: #CBCBCB;
     
-    .contactInfo {      
-      width: 300px;
-      font-size: 16px;
-    }
-  }
-
-  @media (max-width: 320px) {
-
-    .formContainer {
-      input, button {
-        width: 280px;    
+        font-size: 18px;
+        margin: 40px 0 45px 0;
       }
-  
-      textarea {        
-        max-width: 280px;
-        min-width: 280px;
-      }      
-    }
     
-    .contactInfo {
-      width: 280px;
-      font-size: 16px;
-    }
-  }
-
-  @media (max-width: 300px) {
-
-    .formContainer {
-      input, button {
-        width: 260px;
+      .formContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 75px;
+      
+        input, textarea {
+          width: 339px;
+          height: 60px;
+          border-radius: 33px;
+          padding-left: 22px;    
+          border: none;
+          background-color: #DDDDDD;
+          margin-bottom: 20px;
+        }
+      
+        textarea {
+          min-height: 134px;
+          max-height: 190px;
+          max-width: 339px;
+          min-width: 339px;
+          border-radius: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      
+        button {
+          border-radius: 10px;
+          width: 339px;
+          height: 60px;
+          background: #3D7145;
+          color: #ffffff;
+          font-size: 16px;
+    
+          border: none;
+          transition: all 0.3s;
+      
+          &:hover {
+            filter: brightness(0.97);
+          }
+        }
+    
+        button:disabled {
+          cursor: progress;
+        }
+    
+        span {    
+          color: red;
+          margin-top: -10px;
+          padding-bottom: 10px;
+        } 
       }
-  
-      textarea {        
-        max-width: 260px;
-        min-width: 260px;
-      }      
-    }
+
+      @media (max-width: 500px) {
+
+        .formContainer {
+          input, button {
+            width: 300px;        
+          }
+      
+          textarea {        
+            max-width: 300px;
+            min-width: 300px;
+          }      
+        }
+        
+        .contactInfo {      
+          width: 300px;
+          font-size: 16px;
+        }
+      }
     
-    .contactInfo {
-      width: 260px;
-      font-size: 16px;
+      @media (max-width: 320px) {
+    
+        .formContainer {
+          input, button {
+            width: 260px;    
+          }
+      
+          textarea {        
+            max-width: 260px;
+            min-width: 260px;
+          }      
+          button {
+            width: 260px;
+          }
+        }
+        
+        .contactInfo {
+          width: 260px;
+          font-size: 16px;
+        }
+      }
+    
+      @media (max-width: 300px) {
+    
+        .formContainer {
+          input, button {
+            width: 260px;
+          }
+      
+          textarea {        
+            max-width: 260px;
+            min-width: 260px;
+          }      
+        }
+        
+        .contactInfo {
+          width: 260px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    @media (max-width: 500px) {
+      img {
+        display: none;
+      }
     }
   }
+
+  
 }
 
 .socialSection {

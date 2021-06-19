@@ -40,27 +40,28 @@ export function Contact() {
 
   return (
     <section className={s.contactContainer} id="contact">
-      {/* <div className={s.title}>
-        <h2 data-content="Entre em contato">Contato</h2>
-      </div> */}
+      <main>
+        <div>
+          <SectionTitle title="Contato" subtitle="" center />
+          <p className={s.contactInfo}>
+            Entre em contato conosco via email, responderemos em até 48 horas
+          </p>
+          <form onSubmit={handleContactSubmit} className={s.formContainer}>
+            <input type="text" name="name" placeholder="Nome" onChange={e => setName(e.target.value)} />
+            <input type="email" name="email" value={email} placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
+            <textarea name="message" placeholder="Mensagem" onChange={e => setMessage(e.target.value)} />
 
-      <SectionTitle title="Contato" subtitle="Entre em contato" center />
+            {errorMessage && <span>{errorMessage}</span>}
 
-      <p className={s.contactInfo}>
-      Entre em contato conosco via email, responderemos em até 48 horas
-      </p>
+            <button type="submit" disabled={loading}>
+              {loading ? <div className={s.loader}></div> : "Enviar"}
+            </button>
+          </form>
+        </div>
+        <img src="/images/brazil_map.svg" alt="Mapa DU PARÁ" />
+      </main>
 
-      <form onSubmit={handleContactSubmit} className={s.formContainer}>
-        <input type="text" name="name" placeholder="Nome" onChange={e => setName(e.target.value)} />
-        <input type="email" name="email" value={email} placeholder="E-mail" onChange={e => setEmail(e.target.value)} />
-        <textarea name="message" placeholder="Mensagem" onChange={e => setMessage(e.target.value)} />
 
-        {errorMessage && <span>{errorMessage}</span>}
-
-        <button type="submit" disabled={loading}>
-          {loading ? <div className={s.loader}></div> : "Enviar"}
-        </button>
-      </form>
 
       {/* <div className={s.socialSection}>
         <a

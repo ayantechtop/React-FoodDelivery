@@ -10,7 +10,7 @@ export function Sidebar({ isOpen = true, toggle }: IMobileHeader) {
   return (
     <aside onClick={toggle} className={isOpen ? s.container : s.containerClosed}>
       <div onClick={toggle} className={s.header}>       
-        <h1>Logo</h1>
+        
       </div>
 
       <div className={s.wrapper}>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { MdKeyboardArrowDown } from 'react-icons/md'
 import s from "./styles.module.scss";
 
 export function FirstSection() {
@@ -8,14 +8,10 @@ export function FirstSection() {
       <main>
         <img src="/images/logo.svg" alt="DU PARÁ" />  
 
-        <div className={s.description}>
-          <p>Produtos saudáveis, de qualidade DU PARÁ.</p>
-          <h2>Perfeitos para você e para o seu cliente!</h2>
+        <div onClick={() => window.location.href = "#about-us"}>
+          <p>Conheça nosso produto</p>
+          <MdKeyboardArrowDown />
         </div>
-
-        <button onClick={() => window.location.href = "#about-us"}>
-          Saiba mais
-        </button>
       </main>
     </section>
   )

@@ -3,21 +3,21 @@
   flex-direction: column;
 
   @media (min-width: 768px) {
-    .aboutAndProduct {
-      background: url('/images/background1.svg') no-repeat top right;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: 690px;
-    }
+    // .aboutAndProduct {
+    //   background: url('/images/background1.svg') no-repeat top right;
+    //   -webkit-background-size: cover;
+    //   -moz-background-size: cover;
+    //   -o-background-size: cover;
+    //   background-size: 690px;
+    // }
   
-    .moreInfoAndContact {
-      background: url('/images/background2.svg') no-repeat top right;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: 745px;
-    }
+    // .moreInfoAndContact {
+    //   background: url('/images/background2.svg') no-repeat top right;
+    //   -webkit-background-size: cover;
+    //   -moz-background-size: cover;
+    //   -o-background-size: cover;
+    //   background-size: 745px;
+    // }
   }
 
   @media (max-width: 768px) {

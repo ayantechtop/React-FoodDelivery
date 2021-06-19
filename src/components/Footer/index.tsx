@@ -5,16 +5,21 @@ export function Footer() {
   return (
     <footer className={s.footerContainer}>
       <main>
-        <img src="/images/logo_dark.svg" alt="DU PARÁ" />  
+        <img src="/images/logo_footer.svg" alt="DU PARÁ" />  
 
-        <p className={s.footerInfo}>
+        <div className={s.footerInfo}>
           DU PARA - Industria de Alimento LTDA 
           <br/>
           <br/>
           Av. Presidente Getulio Vargas, 3625 QUAD. B GALP 5 
           <br/>
           Ianetama - 68745-5000 Castanhal/Pa
-        </p>
+          <br/>
+          <br/>
+          Du Pará escritório: <span></span><a href="tel:+55 91 3353-7050">91-3353-7050</a> / <a href="tel:+55 91 98423-5190">91-98423-5190</a>
+          <br/>
+          Comercial: <span></span><a href="tel:+55 81 99837-7050">81-99837-7050</a>  / <a href="tel:+55 71 99705-8423">71-99705-8423</a>
+        </div>
       </main>
       <div className={s.footer}>
         <p>

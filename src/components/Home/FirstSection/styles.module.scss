@@ -1,7 +1,7 @@
 .firstSectionContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
   min-height: 100vh;
@@ -13,70 +13,55 @@
   
 
   main {
-    width: 80%;
-    height: 100vh;
+    width: 75%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+
+    img {
+      width: 456px;
+      height: 356px;
+    }
 
     @media screen and (max-width: 400px) { 
       width: 100vw;
       padding: 20px;
-    }
-
-    img {
-      width: 175px;
-    }
-
-    .description {
-      margin-top: 40px;
-
-      p {
-        font-size: 33px;
-        font-weight: 300;
-      }
-
-      h2 {
-        font-size: 49px;
-        font-weight: 900;
-      }
-
-      @media screen and (max-width: 500px) { 
-        
-        h2 {
-          font-size: 35px;
-          margin-top: 10px;
-        }
-
-        p {
-          font-size: 24px;
-        }
-      }
-      
-      @media screen and (max-width: 350px) { 
-        h2 {
-          font-size: 32px;
-        }
-
-        p {
-          font-size: 24px;
-        }
+      img {
+        width: 258px;
+        height: 208px;
       }
     }
 
-    button {
-      margin-top: 50px;
+    div {
+      position: absolute;
+      bottom: 40px;
+      margin-top: 200px;
       height: 52px;
       width: 216px;
       border-radius: 4px;
       border: none;
-      color: #5C5C5C;
+      color: #FFFFFF;
       transition: all 0.3s;
       font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        font-size: 26px;
+      }
 
       &:hover {
-        filter: brightness(0.9);
+        filter: brightness(0.98);
+        cursor: pointer;
+        font-size: 20px;
+
+        svg {
+          font-size: 32px;
+        }
       }
 
       @media screen and (max-width: 300px) { 

@@ -1,55 +1,64 @@
 .productContainer {
+  width: 100%;
   position: relative;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
 
   main {
-    width: 100%;
+    width: 75%;
+    padding: 100px 0 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
 
-    .title {
-      width: 80%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    .cardsContainer {
-      margin-top: 37px;
+    .textContainer {
       width: 100%;
       display: flex;
 
-      @media (max-width: 768px) {
+      justify-content: space-between;
+
+      p {
+        max-width: 600px;
+        margin-top: 40px;
+        font-size: 18px;
+        color: #707070;
+        text-align: left;
+        letter-spacing: 0px;
+      }
+
+      div {
+        margin-top: -45px;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
+    }
 
-      @media (min-width: 769px) {
-        scroll-snap-align: start;
-      }
-
-    }    
   }
 
   @media (max-width: 500px) {
     main {
-      .title {
-        justify-content: center;
-      }
+      align-items: center;
 
-      .moreInfo {
-        align-items: center;
-    
+      .textContainer {
+        flex-wrap: wrap;
+        
         p {
           text-align: center;
+          margin-right: 0;
+          // margin-bottom: 20px;
+        }
+
+        img {
+          display: none;
         }
       }
-    }    
+
+    }
   }
 }

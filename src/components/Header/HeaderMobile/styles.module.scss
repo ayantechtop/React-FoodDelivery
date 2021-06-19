@@ -1,6 +1,6 @@
 .container {
   position: fixed;
-  z-index: 999;
+  z-index: 998;
   width: 100%;
   height: 100%;
   background: rgba(52, 56, 59, 0.95) 100%;
@@ -24,11 +24,11 @@
     height: 95px;
 
     img {
-      width: 180px;
+      width: 66px;
     }
 
     &:after {
-      margin: 30px 0 16px 0;
+      margin: 50px 0 16px 0;
       content: "";
       width: 110px;
       height: 3px;

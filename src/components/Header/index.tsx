@@ -11,6 +11,8 @@ export function Header() {
 
   return (
     <header className={s.headerContainer}>
+      <img src="/images/logo_nav.svg" alt="DU PARÁ" />
+
       <Sidebar isOpen={isOpen} toggle={toggle} />
 
       <div className={s.mobileIconContainer}>

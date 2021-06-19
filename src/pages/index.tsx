@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 import { AboutUs } from "../components/Home/AboutUs";
 import { Contact } from "../components/Home/Contact";
+import { ContactUsCard } from "../components/Home/ContactUsCard";
 import { FirstSection } from "../components/Home/FirstSection";
 import { MoreInfo } from "../components/Home/MoreInfo";
 import { Product } from "../components/Home/Product";
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
       <Header />
       <FirstSection />
+      <ContactUsCard />
       <div className={s.aboutAndProduct}>
         <AboutUs />
         <Product />
