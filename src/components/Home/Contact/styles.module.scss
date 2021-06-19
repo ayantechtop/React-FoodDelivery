@@ -85,8 +85,11 @@
       }
 
       @media (max-width: 500px) {
+        align-items: center;
 
         .formContainer {
+          margin-right: 0px;
+
           input, button {
             width: 300px;        
           }
