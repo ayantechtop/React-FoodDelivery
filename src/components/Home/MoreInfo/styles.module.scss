@@ -63,16 +63,17 @@
       .textContainer {
         width: 80%;
         flex-wrap: wrap;
+        justify-content: center;
         
         p {
           text-align: center;
           margin-right: 0;
-          // margin-bottom: 20px;
         }
 
-        img {
-          display: none;
-        }    
+
+        div {
+          margin-top: 10px;          
+        }   
     }
   }
 }
