@@ -155,9 +155,12 @@
 
     @media (max-width: 500px) {
       justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
 
       img {
-        display: none;
+        width: 80vw;
+        margin-bottom: 30px;
       }
     }
   }
