@@ -27,7 +27,7 @@ export function AboutUs() {
           para essa finalidade. Ao mesmo tempo, a DU PARÁ se compromete 
           com o meio ambiente, uma vez que possui fazendas próprias que 
           seguem rigorosamente os critérios sociais e ambientais exigidos 
-          ela legislação brasileira e pelos modernos critérios internacionais 
+          pela legislação brasileira e pelos modernos critérios internacionais 
           de sustentabilidade.
           </p>      
           <div>
