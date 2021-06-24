@@ -11,7 +11,7 @@ export function AboutUs() {
 
         <div className={s.textContainer}>
           <p>
-          A Indústria de Alimentos DU PARÁ iniciou suas atividades de
+          A Indústria de Alimento DU PARÁ iniciou suas atividades de
           envasamento da gordura de palma em abril de 2013 na 
           cidade de Paulista-PE. Entre suas prioridades sempre se 
           destacaram a qualidade do seu produto e o atendimento aos 
