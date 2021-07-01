@@ -16,10 +16,20 @@
     // padding: 0 12.5%;
   
     .footerInfo {
-      width: 456px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      width: 700px;
       text-align: right;
-      font-size: 18px;
+      font-size: 13px;
       color: #8B8B8B;
+
+      .bar {
+        height: 95px;
+        width: 1px;
+        background-color: #707070;
+      }
 
       a {
         color: #3D7145;
@@ -40,8 +50,16 @@
       .footerInfo {
         width: 280px;
         text-align: center;
-
+        display: block;
         margin-top: 20px;
+
+        .bar {
+          display: none;
+        }
+
+        div:first-child {
+          margin-bottom: 20px;
+        }
 
         span {
           display: block;
@@ -71,4 +89,56 @@
     }
 
   }
+}
+
+.socialSection {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  a {
+    &:not(:first-child) {
+      margin-left: 18px;
+    }
+  }
+  
+  .socialIcon {
+    height: 31.53px;
+    width: 31.53px;
+    border-radius: 50%;
+    background-color: #3D7145;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    svg {
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+
+  @media (max-width: 500px) {
+    justify-content: center;
+    margin-top: 20px;
+
+    .socialIcon {
+      height: 35px;
+      width: 35px;
+
+      svg {
+        font-size: 24px;
+        color: #fff;
+      }
+
+      svg:last-child {
+        margin: 0 0 1px 1px;
+      }
+      
+    }
+  }
+
 }

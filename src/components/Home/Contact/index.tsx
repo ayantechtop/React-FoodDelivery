@@ -60,39 +60,6 @@ export function Contact() {
         </div>
         <img src="/images/brazil_map.svg" alt="Mapa DU PARÁ" />
       </main>
-
-
-
-      {/* <div className={s.socialSection}>
-        <a
-          href="//www.instagram.com"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <div>
-            <FaInstagram />
-          </div>
-        </a>
-        <a
-          href="//www.facebook.com"
-          target="_blank"
-          aria-label="Facebook"
-        >
-          <div>
-            <FaFacebook />
-          </div>
-        </a>
-        <a
-          href="//www.youtube.com"
-          target="_blank"
-          aria-label="Youtube"
-        >
-          <div>
-            <FaYoutube />
-          </div>
-        </a>
-
-      </div> */}
     </section>
   )
 }

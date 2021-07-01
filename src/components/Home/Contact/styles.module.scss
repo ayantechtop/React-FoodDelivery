@@ -163,40 +163,7 @@
         margin-bottom: 30px;
       }
     }
-  }
-
-  
-}
-
-.socialSection {
-  margin-top: 30px;
-  display: flex;
-
-  a {
-    &:not(:first-child) {
-      margin-left: 25px;
-    }
-  }
-  
-  div {
-    height: 42px;
-    width: 42px;
-    border-radius: 50%;
-    background-color: #DDDDDD;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    svg {
-      font-size: 26px;
-    }
-  }
-
+  }  
 }
 
 .loader {
